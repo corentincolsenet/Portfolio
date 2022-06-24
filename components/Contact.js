@@ -5,7 +5,7 @@ import { toast } from 'react-toastify'
 import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
 
-import TextInput from '@/components/Input/Text'
+import TextInput from '@/components/input/Text'
 
 const Contact = () => {
     const { t } = useTranslation()
