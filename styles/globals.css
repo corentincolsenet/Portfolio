@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+@layer components {
+    .text-gradient {
+        @apply text-transparent bg-clip-text bg-gradient-to-r from-blue-light to-pink-light;
+    }
+
+    .gradient {
+        @apply bg-gradient-to-r from-blue-light to-pink-light;
+    }
+
+    .input {
+        @apply appearance-none block w-full bg-cyan dark:bg-gray-800 text-light-content dark:text-dark-content rounded py-3 px-4 leading-tight focus:outline-none;
+    }
+
+    .btn-primary {
+        @apply px-4 py-1 gradient text-white text-base md:text-lg xl:text-xl rounded-lg focus:outline-none;
+    }
+}
+
+@layer utilities {
+    .noSelect {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .noSelect:focus {
+        outline: none !important;
+    }
+    
+    .animate-li li {
+        display: inline-block;
+    }
+    
+    .animate-li li:after {
+        display: block;
+        content: '';
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to right, #00C0FD, #E70FAA);
+        border-image-slice: 1;
+        transform: scaleX(0);
+        transition: transform 300ms ease-in-out;
+    }
+    .animate-li li:hover:after {
+        transform: scaleX(1);
+    }
+    
+    .animate-li li.animate-from-left:after {
+        transform-origin: 0% 50%;
+    }
+}
