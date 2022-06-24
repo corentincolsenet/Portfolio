@@ -12,9 +12,9 @@ const Footer = () => {
         <footer>
             <div className='flex flex-col justify-center items-center space-y-6 pt-4 pb-2'>
                 <div className='flex space-x-8'>
-                    <LinkedInLink height={8} width={8} />
-                    <GithubLink height={8} width={8} />
-                    <MaltLink height={8} width={8} />
+                    <LinkedInLink height={8} width={8} className="text-light-content dark:text-dark-content" />
+                    <GithubLink height={8} width={8} className="text-light-content dark:text-dark-content" />
+                    <MaltLink height={8} width={8} className="text-light-content dark:text-dark-content" />
                 </div>
                 <div className='flex flex-col justify-center items-center text-sm text-light-content dark:text-dark-content'>
                     <p>Copyright © 2022</p>

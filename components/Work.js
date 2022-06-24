@@ -9,13 +9,14 @@ const Work = ({ title, data }) => {
             <h1 className='text-center font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>
                 {title}
             </h1>
-            <motion.ul 
-                whileInView={{ opacity: [0, 1], y: [30, 0] }}
-                transition={{ duration: 0.5, type: 'tween', delayChildren: 0.25 }}
-                className='flex flex-col space-y-4 items-center w-full md:justify-center md:px-16'
-            >
+            <ul className='flex flex-col space-y-4 items-center w-full md:justify-center md:px-16'>
                 {data.map((element, elementIndex) => (
-                    <li key={elementIndex} className='relative flex justify-between border-b-2 border-gray-200 sm:px-3 w-full md:h-16'>
+                    <motion.li
+                        key={elementIndex}
+                        whileInView={{ opacity: [0, 1], y: [30, 0] }}
+                        transition={{ duration: 0.5, type: 'tween' }}
+                        className='relative flex justify-between border-b-2 border-gray-200 sm:px-3 w-full md:h-16'
+                    >
                         <div className='flex flex-col justify-between items-start space-y-4 w-3/5 md:space-y-0'>
                             <h2 className='flex w-full'>{element?.jobName || element?.degreeName}</h2>
                             <div className='flex flex-col text-sm md:items-center md:flex-row md:space-y-0 md:space-x-1 md:w-80 md:justify-between'>
@@ -42,9 +43,9 @@ const Work = ({ title, data }) => {
                                 <p>{element.date}</p>
                             </div>
                         </div>
-                    </li>
+                    </motion.li>
                 ))}
-            </motion.ul>
+            </ul>
         </div>
     )
 }

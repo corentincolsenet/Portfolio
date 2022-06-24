@@ -1,9 +1,9 @@
 import propTypes from 'prop-types'
 
-const LinkedInLink = ({ height,  width }) => {
+const LinkedInLink = ({ height, width, className }) => {
     return (
         <a 
-            className={`relative h-${height} w-${width} text-gray-900 dark:text-white fill-current`}
+            className={`relative h-${height} w-${width} ${className} fill-current`}
             href="https://www.linkedin.com/in/corentin-colsenet-a66524179/"
             target='_blank'
             rel="noreferrer"
@@ -20,5 +20,6 @@ export default LinkedInLink
 
 LinkedInLink.propTypes = {
     height: propTypes.number,
-    width: propTypes.number
+    width: propTypes.number,
+    className: propTypes.string
 }

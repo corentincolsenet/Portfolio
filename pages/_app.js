@@ -9,9 +9,9 @@ import '../styles/globals.css'
 
 const MyApp = ({ Component, pageProps }) => {
     return (
-        <ThemeProvider attribute="class" defaultTheme="system">
+        <ThemeProvider attribute="class" enableSystem={false}>
             <NextSeo
-                title="Corentin Colsenet Portfolio"
+                title="Corentin Colsenet - Portfolio"
                 description="Bienvenue sur mon site portfolio! Vous pourrez y trouver des informations concernant mon parcours professionnel et scolaire."
             />
 

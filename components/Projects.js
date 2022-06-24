@@ -41,13 +41,11 @@ const Projects = () => {
                 <h1 className='text-light-content dark:text-dark-content text-center font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl'>
                     {t("Mes Projets")}
                 </h1>
-                <motion.ul 
-                    whileInView={{ opacity: [0, 1], y: [30, 0] }}
-                    transition={{ duration: 0.5, type: 'tween', delayChildren: 0.25 }}
-                    className='flex flex-wrap gap-y-6 gap-x-12 justify-center items-center'
-                >
+                <ul className='flex flex-wrap gap-y-6 gap-x-12 justify-center items-center'>
                     {projectsList.map(project => (
-                        <li 
+                        <motion.li 
+                            whileInView={{ opacity: [0, 1], y: [30, 0] }}
+                            transition={{ duration: 0.5, type: 'tween' }}
                             key={project.title}
                             title={project.title}
                             className='flex flex-col h-96 w-64 rounded-3xl shadow-lg border-gray-700 bg-white'
@@ -72,7 +70,7 @@ const Projects = () => {
                                     <div className='flex justify-center items-center space-x-4'>
                                         {project?.livePreview &&
                                             <div className='flex space-x-1 items-center'>
-                                                <LinkIcon className='h-4 w-4' />
+                                                <LinkIcon className='h-4 w-4 text-gray-900' />
                                                 <a 
                                                     className='text-medium text-xs underline cursor-pointer'
                                                     href={project.livePreview}
@@ -85,7 +83,7 @@ const Projects = () => {
                                         }
                                         {project?.gitHub &&
                                             <div className='flex space-x-1 items-center'>
-                                                <GithubLink height={4} width={4} />
+                                                <GithubLink height={4} width={4} className="text-gray-900" />
                                                 <a 
                                                     className='text-medium text-xs underline cursor-pointer'
                                                     href={project.gitHub}
@@ -99,9 +97,9 @@ const Projects = () => {
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </motion.li>
                     ))}
-                </motion.ul>
+                </ul>
             </div>
 
         </section>
