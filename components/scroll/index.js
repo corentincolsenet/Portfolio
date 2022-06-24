@@ -1,1 +1,1 @@
-export * from '@/components/Scroll/ScrollToTop'
+export * from '@/components/scroll/ScrollToTop'

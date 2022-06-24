@@ -1,1 +1,1 @@
-export * from '@/components/Scroll'
+export * from '@/components/scroll'
