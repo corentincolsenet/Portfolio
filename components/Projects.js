@@ -14,7 +14,7 @@ const Projects = () => {
             description: t("J'ai créé ce site portfolio afin de mettre en valeur les compétences techniques acquises lors de mes anciennes expériences professionnelles et personnelles."),
             techStack: 'ReactJS, NextJS, TailwindCSS, Framer Motion',
             img: '/images/site-portfolio.png',
-            gitHub: '',
+            gitHub: 'https://github.com/corentincolsenet/Portfolio',
             alt: t("aperçu de l'image du site portfolio")
         },
         {
