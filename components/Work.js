@@ -19,8 +19,8 @@ const Work = ({ title, data }) => {
                     >
                         <div className='flex flex-col justify-between items-start space-y-4 w-3/5 md:space-y-0'>
                             <h2 className='flex w-full'>{element?.jobName || element?.degreeName}</h2>
-                            <div className='flex flex-col text-sm md:items-center md:flex-row md:space-y-0 md:space-x-1 md:w-80 md:justify-between'>
-                                <div className='flex space-x-1 items-center'>
+                            <div className='flex flex-col text-sm md:items-center md:flex-row md:space-y-0 md:space-x-1'>
+                                <div className='flex space-x-1 items-center md:w-28 lg:w-44'>
                                     <OfficeBuildingIcon className='h-4 w-4' />
                                     <h3>{element?.company || element?.school}</h3>
                                 </div>

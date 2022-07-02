@@ -16,7 +16,7 @@ const Information = () => {
     ]
 
     return (
-        <section id='about' className='w-full h-full px-8 pb-4 md:px-10 xl:px-6'>
+        <section id='about' className='w-full h-full px-8 py-4 md:px-10 xl:px-6'>
             <div className='flex flex-col space-y-12 max-w-2xl md:max-w-6xl items-center justify-center w-full mx-auto'>
                 <Work title={t("Mes Expériences")} data={experiences} />
                 <Work title={t("Mon Parcours")} data={education} />

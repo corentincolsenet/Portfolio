@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
         <>
             <Header />
             
-            <main className='space-y-12 md:space-y-8'>
+            <main>
                 {children}
             </main>
 

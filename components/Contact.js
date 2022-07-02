@@ -51,7 +51,7 @@ const Contact = () => {
     }
 
     return (
-        <section id='contact' className='w-full h-full px-8 pb-4 md:px-10 xl:px-6'>
+        <section id='contact' className='w-full h-full px-8 py-4 md:px-10 xl:px-6'>
             <div className='flex flex-col space-y-6 max-w-2xl md:max-w-6xl items-center justify-center w-full mx-auto'>
                 <h1 className='text-center font-bold text-2xl md:text-3xl lg:text-4xl xl:text-5xl text-light-content dark:text-dark-content'>
                     {t("Me contacter")}
@@ -63,6 +63,8 @@ const Contact = () => {
                     email: '',
                     message: ''
                 }}
+                validateOnChange={false}
+                validateOnBlur={false}
                 validationSchema={contactSchema}
                 onSubmit= {(values, { resetForm }) => {
                     try {

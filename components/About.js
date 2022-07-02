@@ -8,7 +8,7 @@ const About = () => {
     const { t } = useTranslation()
 
     return (
-        <section className='flex flex-col space-y-4 px-8 max-w-md mx-auto mt-4 md:mt-0 sm:max-w-2xl md:space-y-0 md:flex-row-reverse md:items-center md:justify-between md:max-w-6xl md:pt-10 md:px-10 xl:px-6'>
+        <section className='flex flex-col space-y-4 px-8 max-w-md mx-auto py-4 sm:max-w-2xl md:space-y-0 md:flex-row-reverse md:items-center md:justify-between md:max-w-6xl md:pt-10 md:px-10 xl:px-6'>
             {/* Mon Image */}
             <div className='flex justify-center items-center'>
                 <motion.div 
@@ -56,13 +56,16 @@ const About = () => {
                     {t("Actuellement en 5ème année à Epitech, je suis à la recherche d'un CDD ou d'un stage à temps partiel dans le cadre du début de cette nouvelle année. N'hésitez surtout pas à me contacter via mon formulaire de contact si mon profil vous plaît!")}
                 </p>
                 <div className='relative flex justify-start'>
-                    <a
+                    <motion.a
+                        initial={{ scale: 1, opacity: 0}}
+                        whileHover={{ scale: 1.05 }}
+                        whileInView={{ opacity: 1 }}
                         href='/files/cv-corentin-colsenet.pdf'
                         className='btn-primary'
                         download
                     >
                         {t("Télécharger mon CV")}
-                    </a>
+                    </motion.a>
                 </div>
             </motion.div>
         </section>
