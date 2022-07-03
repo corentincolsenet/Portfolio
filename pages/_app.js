@@ -12,7 +12,7 @@ const MyApp = ({ Component, pageProps }) => {
         <ThemeProvider attribute="class" enableSystem={false}>
             <NextSeo
                 title="Corentin Colsenet - Développeur web - Portfolio"
-                description="Portfolio de Corentin Colsenet. Étudiant et Développeur Web Junior passionné avec l'envie perpétuelle d'apprendre et de m'améliorer."
+                description="Portfolio de Corentin Colsenet. Étudiant et Développeur Web Junior passionné avec l'envie perpétuelle d'apprendre et de s'améliorer."
             />
 
             <SWRConfig
