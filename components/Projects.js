@@ -12,15 +12,34 @@ const Projects = () => {
         {
             title: t("Site porfolio"), 
             description: t("J'ai créé ce site portfolio afin de mettre en valeur les compétences techniques acquises lors de mes anciennes expériences professionnelles et personnelles."),
-            techStack: 'ReactJS, NextJS, TailwindCSS, Framer Motion',
+            techStack: 'NextJS, TailwindCSS, Framer Motion',
             img: '/images/site-portfolio.png',
             gitHub: 'https://github.com/corentincolsenet/Portfolio',
             alt: t("aperçu de l'image du site portfolio")
         },
         {
+            title: t("Movies app avec Redux"),
+            description: t("Une movie app permettant d'afficher les films par 4, 8 ou 12 et par catégorie. L'application contient aussi un moyen de changer de page si il y'a plus de films que d'élément à afficher."),
+            techStack: 'ReactJS, TailwindCSS, Redux',
+            img: '/images/movies-app.png',
+            gitHub: 'https://github.com/corentincolsenet/movies-app-redux',
+            livePreview: 'https://movies-app-redux-alpha.vercel.app',
+            alt: t("aperçu de l'image de la movies app")
+        },
+        ,
+        {
+            title: t("Gantt chart"),
+            description: t("Affichage de tâches avec la possibilité de changer la date, la bar de progrès et la vue qui par défaut est le jour."),
+            techStack: 'NextJS, Styled-components, Gantt-task-react',
+            img: '/images/gantt.png',
+            gitHub: 'https://github.com/corentincolsenet/gantt-chart',
+            alt: t("aperçu de l'image du Gantt chart")
+        },
+        ,
+        {
             title: t("Site vitrine de Green"),
             description: t("Le site vitrine de Green a vu le jour lors de la création de l'EIP (Epitech Inovative Project). Si vous voulez en savoir plus sur Green, n'hésitez pas à aller voir le site vitrine."),
-            techStack: 'ReactJS, NextJS, TailwindCSS, Framer Motion',
+            techStack: 'NextJS, TailwindCSS, Framer Motion',
             img: '/images/site-green.png',
             livePreview: 'https://discovergreen.org/',
             alt: t("aperçu de l'image du site green")
