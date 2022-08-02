@@ -8,7 +8,7 @@ const About = () => {
     const { t } = useTranslation()
 
     return (
-        <section className='flex flex-col space-y-4 h-screen justify-center items-center px-8 max-w-md mx-auto py-4 sm:max-w-2xl md:space-y-0 md:flex-row-reverse md:justify-between md:max-w-6xl md:pt-10 md:px-10 xl:px-6'>
+        <section className='flex flex-col space-y-4 md:h-screen justify-center items-center px-8 max-w-md mx-auto py-4 sm:max-w-2xl md:space-y-0 md:flex-row-reverse md:justify-between md:max-w-6xl md:pt-10 md:px-10 xl:px-6'>
             {/* Mon Image */}
             <div className='flex justify-center items-center'>
                 <motion.div 
