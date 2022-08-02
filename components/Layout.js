@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
         <>
             <Header />
             
-            <main>
+            <main className='-mt-20'>
                 {children}
             </main>
 

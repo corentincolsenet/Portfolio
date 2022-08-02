@@ -55,7 +55,7 @@ const Header = () => {
     
     return (
         <header className={`${animateHeader && 'shadow-xl sticky top-0 inset-0 bg-white/50 dark:bg-gray-800'} w-full backdrop-filter backdrop-blur-lg z-10 transition-all ease-in-out duration-200`}>
-            <div className='max-w-6xl mx-auto'>
+            <div className='max-w-7xl 2xl:max-w-8xl mx-auto'>
                 <div className={`flex items-center justify-between py-6 px-8`}>
                     <Link href="/">
                         <a className='text-2xl font-bold text-gradient cursor-pointer'>

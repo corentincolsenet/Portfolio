@@ -8,7 +8,7 @@ const About = () => {
     const { t } = useTranslation()
 
     return (
-        <section className='flex flex-col space-y-4 px-8 max-w-md mx-auto py-4 sm:max-w-2xl md:space-y-0 md:flex-row-reverse md:items-center md:justify-between md:max-w-6xl md:pt-10 md:px-10 xl:px-6'>
+        <section className='flex flex-col space-y-4 h-screen justify-center items-center px-8 max-w-md mx-auto py-4 sm:max-w-2xl md:space-y-0 md:flex-row-reverse md:justify-between md:max-w-6xl md:pt-10 md:px-10 xl:px-6'>
             {/* Mon Image */}
             <div className='flex justify-center items-center'>
                 <motion.div 
@@ -31,7 +31,7 @@ const About = () => {
             </div>
             {/* Titre et brief résumé */}
             <motion.div 
-                className='relative flex flex-col space-y-4 w-full md:space-y-6 text-light-content dark:text-dark-content'
+                className='relative flex flex-col space-y-6 w-full xl:space-y-8 text-light-content dark:text-dark-content'
                 whileInView={{ opacity: [0, 1], y: [30, 0] }}
                 transition={{ duration: 0.5, type: 'tween' }}
             >
